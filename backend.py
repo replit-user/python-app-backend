@@ -79,6 +79,9 @@ def buy(user: UserOnly):
         return {"message": "Message slot purchased!"}
     else:
         return {"message": "Not enough points"}
+while True:
+    for message in messages:
+        print(message)
 
 @app.get("/messages")
 def get_messages():
