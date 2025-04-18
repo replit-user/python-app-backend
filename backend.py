@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-
+import fastapi
 class UserCredentials(BaseModel):
     username: str
     password: str
