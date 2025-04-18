@@ -82,3 +82,8 @@ def buy(username: str):
         return {"message": "Message slot purchased!"}
     else:
         return {"message": "Not enough points"}
+
+
+@app.get("/messages")
+def get_messages():
+    return {"messages":messages}
