@@ -85,4 +85,5 @@ while True:
 
 @app.get("/messages")
 def get_messages():
+    return {"messages":messages}
     return {"messages": messages}
