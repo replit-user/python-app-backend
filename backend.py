@@ -11,7 +11,7 @@ class MessageData(BaseModel):
 class UserOnly(BaseModel):
     username: str
 
-app = fastapi.Fastapi()
+app = fastapi.FastAPI()
 
 @app.post("/signup")
 def signup(credentials: UserCredentials):
